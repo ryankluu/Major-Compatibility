@@ -22,6 +22,4 @@ Team 8
 	* Prototype uses the user’s gps location. We need to collect information about POIs on Tufts campus, and users can submit GPA etc to get back compatibility results.
 
 - Special techniques / algorithms:
-	* compatibility algorithm for seeing if Tufts is right for you (some sort of similarity rating comparing them to “the average student”?)
-
-- Link to Mockup: 
+	* compatibility algorithm for seeing if Tufts is right for you (some sort of similarity rating comparing them to “the average student”)
