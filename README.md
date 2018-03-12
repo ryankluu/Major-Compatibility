@@ -23,3 +23,6 @@ Team 8
 
 - Special techniques / algorithms:
 	* compatibility algorithm for seeing if Tufts is right for you (some sort of similarity rating comparing them to “the average student”)
+
+## Comments by Ming
+* "compatibility algorithm for seeing if Tufts is right for you (some sort of similarity rating comparing them to “the average student”)" => I am completely sold by this idea!  Originally, I was thinking "oh great another admissions app" but this is badly needed: a compatibility game-like thing to sell someone into (or out) of a program / major / school.  
