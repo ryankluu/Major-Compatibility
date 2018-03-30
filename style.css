@@ -6,3 +6,27 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+#acronym{
+	font-size: 12px;
+	text-align: center;
+	background-color: #6699ff;
+	outline-style: solid;
+	outline-width: 1px;
+	font-family: Arial;
+	vertical-align: middle;
+}
+
+div
+{
+	background-color: white;
+	outline-style: none;
+	text-align: left;
+}
+
+#pagetitle{
+	text-align: center;
+	outline-style: none;
+	font-size: 30px;
+	font-family: Arial Black;
+}
