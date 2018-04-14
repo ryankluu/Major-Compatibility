@@ -34,4 +34,4 @@ waiting until the last minute. To really get this project moving in the right di
 we will need to be more disciplined in terms of prioritizing these goals.
 
 # Comments by Ming
-* "We're having a difficult time deciding whether we want to create an algorithm to determine major compatibility or a prospective students fit at Tufts." => Perhaps to fancy.  I would do a 3 question survey to start.  Maybe this is a good start? https://www.buzzfeed.com/mattbellassai/what-should-your-college-major-actually-be?utm_term=.ovay0DqpG#.cywYmdVZ3
+* "We're having a difficult time deciding whether we want to create an algorithm to determine major compatibility or a prospective students fit at Tufts." => Perhaps to fancy.  I would do a 3 question survey to start.  Maybe start here? https://www.buzzfeed.com/mattbellassai/what-should-your-college-major-actually-be?utm_term=.ovay0DqpG#.cywYmdVZ3
