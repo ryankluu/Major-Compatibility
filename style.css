@@ -54,11 +54,23 @@ h3{
 
 #footer{
 	background-color: #507fb9;
-	min-height: 125px;
+	min-height: 150px;
     height: 100%;
 }
 
 
+@media all and (max-width: 576px) {
+	.container-fluid{
+		margin-left: 0px;
+		margin-right: 0px !important;
+		padding-right: 0px !important;
+		padding-left: 0px;
+	}
+	.home-img{
+		margin-left: 0px !important;
+	}
+
+}
 
 
 
