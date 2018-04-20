@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="map_style.css" />
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -23,6 +23,13 @@
           center: {lat: parseFloat(latitude), lng: parseFloat(longitude)},
           zoom: 17
         });
+        var poi_icon = "poi_icon.png" //this can be changed later to something better and we can add longer descriptions to the markers (or add quiz pages to them)
+        var building_info = new google.maps.InfoWindow({content: "none"});
+        add_poi("Anderson: engineering building",42.406104,-71.116791,poi_icon,building_info);
+        add_poi("Olin: language building",42.408286,-71.121167,poi_icon,building_info)
+        add_poi("Halligan: computer science building",42.408215,-71.11624,poi_icon,building_info)
+        add_poi("pearson",42.407484,-71.119023,poi_icon,building_info);
+        add_poi("braker",42.407484,-71.119023,poi_icon,building_info)        
     }
    	function success(position) {
         var lat  = position.coords.latitude;
@@ -32,17 +39,16 @@
     function init(){
       navigator.geolocation.getCurrentPosition(success);
     }
-
-    // function create_landmarks()
-    // {
-    
-    //   (42.406104, -71.116791) = anderson
-    //   (42.408286, -71.121167) = olin
-    //   (42.408215, -71.11624) = halligan
-    //   (42.407484, -71.119023) = pearson
-    //   (42.407484, -71.119023) = braker
-
-    // }
+    function add_poi(info,lat,lng,icon,building_info){
+      var building = new google.maps.Marker({
+                          position: {lat: lat, lng: lng},
+                          map: map,
+                          icon: icon
+                          });
+        building.info = info;
+        google.maps.event.addListener(building,"click",function(){building_info.setContent(this.info);
+                              building_info.open(map, this);}); 
+    }
    	</script>
 </body>
 </html>
