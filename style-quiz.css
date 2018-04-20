@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+#masthead { 
+	font-family: 'Fjalla One';
+	font-style: bold;
+	text-transform: uppercase;
+	font-size: 25pt;
+	line-height: .9; 
+}
+
+
+.masthead-bar{
+	margin: 1px 0px;
+	border: 5; 
+	height: 3px;
+	background-color: black;
+}
+
+.header{
+	background-color: #507fb9;
+	min-height: 50px;
+}
+
+h1{
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+	font-family: 'Roboto Slab';
+	font-weight: bold; 
+}
+
+h3{
+	font-family: 'Roboto Slab';
+	text-align: center;
+	font-weight: bold; 
+}
+
+.link-box{
+	border-style: double;
+	text-align: center;
+}
+
+
+h4{
+	font-family: 'Roboto Slab';
+	text-align: center; 
+}
