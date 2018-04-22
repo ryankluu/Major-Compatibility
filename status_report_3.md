@@ -34,3 +34,7 @@ quiz sites. As for the rest of the front end development, the
 google interface and individual quiz pages are all thats left. 
 After these are created, which shouldn't take too long, the rest 
 of the project will involve back end dev. 
+
+# Comments by Ming
+* Seems like the week from Status Report 2 was a lost week
+* "the rest of the project will involve back end dev." => what are the tasks? 
