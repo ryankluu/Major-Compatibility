@@ -35,7 +35,7 @@ h2 {
 
 h3 {
     font-family: 'Roboto Slab';
-    text-align: left;
+    text-align: center;
     font-weight: bold;
 }
 
@@ -46,12 +46,12 @@ h3 {
 
 h4 {
     font-family: 'Roboto Slab';
-    text-align: left;
+    text-align: center;
 }
 
 h5{
     font-family: 'Roboto Slab';
-    text-align: left;
+    text-align: center;
 }
 
 .navbar-nav {
