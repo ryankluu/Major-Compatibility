@@ -41,6 +41,7 @@ h3 {
 
 .link-box {
     border-style: double;
+    background-color: white;
 }
 
 
@@ -49,7 +50,6 @@ h4 {
     text-align: center;
 }
 
-<<<<<<< HEAD
 .input{
 	text-align: center;
 }
