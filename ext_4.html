@@ -17,8 +17,6 @@
 <div class = "container=fluid">
 </div>
 
-
-
 	<!-- Row 1  -->
 	<div class = "row header mt-2">
 		<div class = "col-12">
@@ -49,13 +47,18 @@
 <!-- Row 5 -->
 <div class="row mt-5">
     <div class="col-12">
-        <div class="link-box mr-3 ml-3">
+        <div class="link-box mr-1 ml-1">
             <h3>Favorite way to spend your free time?</h3>
             <form >
-			<br><input type="radio" name="choice" value="Programming"> Programming
-			<br><input type="radio" name="choice" value="Application"> Application
-			<br><input type="radio" name="choice" value="None of These"> None of These
-			<br></form>
+            <div id = "myDIV">
+			<input type="radio" name="answer" value="Programming">Programming 
+			<br><input type="radio" name="answer" value="Application"> Application
+			<br><input type="radio" name="answer" value="None of These"> None of These
+			<br> <br> <button onclick="store_value()">Submit!</button>
+			</form>
+			</div>
+		</div>
+		<br> <div class="link-box mr-1 ml-1">
             <h3>Question 1:</h3>
             <form>
                 <div class="checkbox">
@@ -71,6 +74,8 @@
                         <input type="checkbox" value="">Option 3</label>
                 </div>
             </form>
+        </div>
+        <br> <div class="link-box mr-1 ml-1">
             <h3>Question 1:</h3>
             <form>
                 <div class="checkbox">
@@ -89,5 +94,44 @@
         </div>
     </div>
 </div>
+<script>
+	total_sum = 0;
+	value = 0;
+
+	function store_value() {
+		var radios = document.getElementsByName("answer");
+		var len = radios.length;
+		var checked = false;
+		var userAnswer;
+		var value = 0;
+
+		for(i = 0; i < len; i++ ) {
+			if(radios[i].checked) {
+				checked = true;
+				userAnswer = radios[i].value;
+
+				if (checked == true)
+					value = i+1;
+			}
+		} 
+
+
+	  	if(!checked) {
+	  		alert("please select choice answer");
+	  		return;
+	  	}
+
+	  	alert(userAnswer);
+	  	alert(value);
+	  	myFunction();
+ 	 }
+
+  	 function myFunction() {
+  	 	$( "myDIV" ).click(function() {
+ 			 $( "myDIV" ).empty();
+		});
+	    
+	 }
+</script>
 
 </html>
