@@ -1,131 +1,138 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.
 	com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha38
 	4-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/d
 	AiS6JXm" crossorigin="anonymous">
-	<meta charset="utf-8" />
-	<title></title>
-	<link rel="stylesheet" href="ext-1.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="ext-1.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <script>
-        var sum = 0;
+var sum = 0;
 
-        function counter() {
-            for (i = 0; i < 15; i++) {
-                if (document.getElementById(i).checked) {
-                    sum += +document.getElementById(i).value;
-                }
-            }
-            alert(sum);
-			localStorage.setItem("quiz_3", sum);
-            sum = 0;
-        }
+        
+function counter() {            
+    for (i = 0; i < 15; i++) {                 if (document.getElementById(i).checked) {                     sum += +document.getElementById(i).value;                 }             }             alert(sum);
+    localStorage.setItem("quiz_3", sum);            
+    sum = 0;        
+}
 </script>
-<div class = "container=fluid">
+<div class="container=fluid">
 </div>
-
-
-
-	<!-- Row 1  -->
-	<div class = "row header mt-2">
-		<div class = "col-12">
-			<h1 id = "masthead" class = "mt-3">
+<!-- Row 1  -->
+<div class="row header mt-2">
+    <div class="col-12">
+        <h1 id="masthead" class="mt-3">
 			TPSA
 			</h1>
-			<button type="button" onclick = "location.href ='index.html';" style = "display:block;margin:0 auto;" class="btn btn-light mb-3">Home</button>
-		</div>
-	</div>
+        <button type="button" onclick="location.href ='index.html';" style="display:block;margin:0 auto;" class="btn btn-light mb-3">Home</button>
+    </div>
+</div>
+<!-- Row 2  -->
+<div class="row">
+    <div class="col-3">
+    </div>
+    <div class="col-6 mt-3">
+        <hr class="masthead-bar">
+    </div>
+</div>
+<!-- Row 3 -->
+<div class="row">
+    <div class="col-3">
+    </div>
+    <div class="col-6">
+        <h2>Braker Hall: History Quiz</h2>
+    </div>
+</div>
+<center>
+    <!-- Row 5 -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="link-box mr-3 ml-3">
+                <h3> Question 1: </h3>
+                <h4>What school supplies are most important to you?</h4>
+                <form>
+                    <input type="radio" name="choice" id="0" value="0"> Art Supplies
+                    <br>
+                    <input type="radio" name="choice" id="1" value="2"> Notebook
+                    <br>
+                    <input type="radio" name="choice" id="2" value="1"> Calculator
+                    <br>
+                    <input type="radio" name="choice" id="3" value="0"> Lab Notebook
+                    <br>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Row 6 -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="link-box mr-3 ml-3">
+                <h3> Question 2: </h3>
+                <h4>What is GDP?</h4>
+                <form>
+                    <input type="radio" name="choice" id="4" value="4"> The total value of goods produced and services provided in a country during one year.
+                    <br>
+                    <input type="radio" name="choice" id="5" value="2"> The total value of goods produced and services provided by a country during one year
+                    <br>
+                    <input type="radio" name="choice" id="6" value="0"> The total amount of money earned within a country.
+                    <br>
+                    <input type="radio" name="choice" id="7" value="0"> Not sure
+                    <br>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Row 7 -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="link-box mr-3 ml-3">
+                <h3> Question 3: </h3>
+                <h4>What is an opportunity cost?</h4>
+                <form>
+                    <input type="radio" name="choice" id="8" value="0 "> The measure of uncertainty that an investor is willing to take to realize a gain from an investment.
+                    <br>
+                    <input type="radio" name="choice" id="9" value="4"> The loss of potential gain from other alternatives when one alternative is chosen.
+                    <br>
+                    <input type="radio" name="choice" id="10" value="0"> A benefit, profit, or value of something that must be given up to acquire or achieve something else.
+                    <br>
+                    <input type="radio" name="choice" id="11" value="0"> Not sure
+                    <br>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Row 8 -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="link-box mr-3 ml-3">
+                <h3>Question 4:</h3>
+                <h4>Are you interested in the stock market?</h4>
+                <form>
+                
+                    <input type="radio" name="choice" id="12" value="5"> Yes, I own shares of companies on the stock market.
+                    <br>
+                    <input type="radio" name="choice" id="13" value="3"> Yes, but I don't own any shares.
+                    <br>
+                    <input type="radio" name="choice" id="14" value="1"> No, but I do want to learn more about it.
+                    <br>
+                    <input type="radio" name="choice" id="15" value="0"> No, not at all.
+                    <br>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <button type="button" onclick="counter()" class="btn btn-danger mb-3">Submit</button>
+    <p><br></p>
+</center>
 
-	<!-- Row 2  -->
-	<div class = "row">
-		<div class = "col-3">
-		</div>
-		<div class = "col-6 mt-3">
-			<hr class = "masthead-bar">
-		</div>
-	</div>
-
-	<!-- Row 3 -->
-	<div class = "row">
-		<div class = "col-3">
-</div>
-<div class="col-6">
-    <h2>Braker Hall: History Quiz</h2>
-</div>
-</div>
-<!-- Row 5 -->
-<div class="row mt-5">
-    <div class="col-12">
-        <div class="link-box mr-3 ml-3">
-        	<h3> Question 1: </h3>
-            <h4>What school supplies are most important to you?</h4>
-             <form >
-				<br><input type="radio" name="choice" id="0" value="0"> Art Supplies
-				<br><input type="radio" name="choice" id="1" value="2"> Notebook
-				<br><input type="radio" name="choice" id="2" value="1"> Calculator
-				<br><input type="radio" name="choice" id="3" value="0"> Lab Notebook
-			</form>
-        </div>
-    </div>
-</div>
-<!-- Row 6 -->
-<div class="row mt-5">
-    <div class="col-12">
-        <div class="link-box mr-3 ml-3">
-        	<h3> Question 2: </h3>
-            <h4>What is GDP?</h4>
-            <form >
-				<br><input type="radio" name="choice" id="4" value="4"> The total value of goods produced and services provided in a country during one year.
-				<br><input type="radio" name="choice" id="5" value="2"> The total value of goods produced and services provided by a country during one year
-				<br><input type="radio" name="choice" id="6" value="0"> The total amount of money earned within a country.
-				<br><input type="radio" name="choice" id="7" value="0"> Not sure
-				<br>
-			</form>
-        </div>
-    </div>
-</div>
-<!-- Row 7 -->
-<div class="row mt-5">
-    <div class="col-12">
-        <div class="link-box mr-3 ml-3">
-        	<h3> Question 3: </h3>
-            <h4>What is an oppoutunity cost?</h4>
-             <form >
-				<br><input type="radio" name="choice" id="8" value="0 "> The measure of uncertainty that an investor is willing to take to realize a gain from an investment. 
-				<br><input type="radio" name="choice" id="9" value="4"> The loss of potential gain from other alternatives when one alternative is chosen.
-				<br><input type="radio" name="choice" id="10" value="0"> A benefit, profit, or value of something that must be given up to acquire or achieve something else.
-				<br><input type="radio" name="choice" id="11" value="0"> Not sure
-				<br>
-			</form>
-        </div>
-    </div>
-</div>
-<!-- Row 8 -->
-<div class="row mt-5">
-    <div class="col-12">
-        <div class="link-box mr-3 ml-3">
-            <h3>Question 4:</h3>
-            <h4>Are you interested in the stock market?</h4>
-            <form>
-                <input type="radio" name="choice" id="12" value="5"> Yes, I own shares of companies on the stock market. 
-                <br>
-                <input type="radio" name="choice" id="13" value="3"> Yes, but I don't own any shares.  
-                <br>
-                <input type="radio" name="choice" id="14" value="1"> No, but I do want to learn more about it.
-                <br>
-                <input type="radio" name = "choice" id="15" value="0"> No, not at all.
-                <br>
-                <br>
-            </form>
-        </div>
-    </div>
-</div>
-<br>
-<button onclick="counter()">Submit</button>
 </html>

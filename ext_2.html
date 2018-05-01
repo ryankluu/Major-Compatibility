@@ -1,81 +1,75 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.
 	com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha38
 	4-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/d
 	AiS6JXm" crossorigin="anonymous">
-	<meta charset="utf-8" />
-	<title></title>
-	<link rel="stylesheet" href="ext-1.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="ext-1.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-
 <script>
-        var sum = 0;
+var sum = 0;
 
-        function counter() {
-            for (i = 0; i < 21; i++) {
-                if (document.getElementById(i).checked) {
-                    sum += +document.getElementById(i).value;
-                }
-            }
-            alert(sum);
-           
-			localStorage.setItem("quiz_2", sum);
-			sum = 0;
-        }
+        
+function counter() {            
+    for (i = 0; i < 21; i++) {                 if (document.getElementById(i).checked) {                     sum += +document.getElementById(i).value;                 }             }             alert(sum);           
+    localStorage.setItem("quiz_2", sum);
+    sum = 0;        
+}
 </script>
-
-<div class = "container=fluid">
+<div class="container=fluid">
 </div>
-
-
-
-	<!-- Row 1  -->
-	<div class = "row header mt-2">
-		<div class = "col-12">
-			<h1 id = "masthead" class = "mt-3">
+<!-- Row 1  -->
+<div class="row header mt-2">
+    <div class="col-12">
+        <h1 id="masthead" class="mt-3">
 			TPSA
 			</h1>
-			<button type="button" onclick = "location.href ='index.html';" style = "display:block;margin:0 auto;" class="btn btn-light mb-3">Home</button>
-		</div>
-	</div>
+        <button type="button" onclick="location.href ='index.html';" style="display:block;margin:0 auto;" class="btn btn-light mb-3">Home</button>
+    </div>
+</div>
+<!-- Row 2  -->
+<div class="row">
+    <div class="col-3">
+    </div>
+    <div class="col-6 mt-3">
+        <hr class="masthead-bar">
+    </div>
+</div>
+<!-- Row 3 -->
+<div class="row">
+    <div class="col-3">
+    </div>
+    <div class="col-6">
+        <h2>Halligan Hall: Computer Science Quiz</h2>
+    </div>
+</div>
 
-	<!-- Row 2  -->
-	<div class = "row">
-		<div class = "col-3">
-		</div>
-		<div class = "col-6 mt-3">
-			<hr class = "masthead-bar">
-		</div>
-	</div>
-
-	<!-- Row 3 -->
-	<div class = "row">
-		<div class = "col-3">
-</div>
-<div class="col-6">
-    <h2>Halligan Hall: Computer Science Quiz</h2>
-</div>
-</div>
+<center>
 <!-- Row 5 -->
 <div class="row mt-5">
     <div class="col-12">
         <div class="link-box mr-3 ml-3">
-        	<h3> Question 1: </h3>
+            <h3> Question 1: </h3>
             <h4>Would you rather deal with small details or the big picture?</h4>
-             <form >
-				<br><input type="radio" name="choice" id="0" value="0"> I would much rather deal with the big picture.
-				<br><input type="radio" name="choice" id="1" value="0"> I would somewhat rather deal with the big picture.
-				<br><input type="radio" name="choice" id="2" value="1"> I have no preference.
-				<br><input type="radio" name="choice" id="3" value="2"> I would somewhat rather deal with the small details.
-				<br><input type="radio" name="choice" id="4" value="4"> I would much rather deal with the small details.
-				<br>				
-			</form>
+            <form>
+                <br>
+                <input type="radio" name="choice" id="0" value="0"> I would much rather deal with the big picture.
+                <br>
+                <input type="radio" name="choice" id="1" value="0"> I would somewhat rather deal with the big picture.
+                <br>
+                <input type="radio" name="choice" id="2" value="1"> I have no preference.
+                <br>
+                <input type="radio" name="choice" id="3" value="2"> I would somewhat rather deal with the small details.
+                <br>
+                <input type="radio" name="choice" id="4" value="4"> I would much rather deal with the small details.
+                <br>
+                <br>
+            </form>
         </div>
     </div>
 </div>
@@ -83,15 +77,20 @@
 <div class="row mt-5">
     <div class="col-12">
         <div class="link-box mr-3 ml-3">
-        	<h3> Question 2: </h3>
+            <h3> Question 2: </h3>
             <h4>Select which game you would prefer to play.</h4>
-            <form >
-				<br><input type="radio" name="choice" id="5" value="0"> UNO
-				<br><input type="radio" name="choice" id="6" value="0"> Monopoly
-				<br><input type="radio" name="choice" id="7" value="4"> Chess
-				<br><input type="radio" name="choice" id="8" value="0"> Scrabble
-				<br>
-			</form>
+            <form>
+                <br>
+                <input type="radio" name="choice" id="5" value="0"> UNO
+                <br>
+                <input type="radio" name="choice" id="6" value="0"> Monopoly
+                <br>
+                <input type="radio" name="choice" id="7" value="4"> Chess
+                <br>
+                <input type="radio" name="choice" id="8" value="0"> Scrabble
+                <br>
+                <br>
+            </form>
         </div>
     </div>
 </div>
@@ -99,19 +98,30 @@
 <div class="row mt-5">
     <div class="col-12">
         <div class="link-box mr-3 ml-3">
-        	<h3> Question 3: </h3>
+            <h3> Question 3: </h3>
             <h4>What does the variable sum equal after the following snippet of code is executed?</h4>
-            <div> <p> int output = 0; <br/> for (int i = 0; i < 5; i++) <br/> { <br/> &emsp;output++; <br/> }
-            	 </p>
+            <div>
+                <p> int output = 0;
+                    <br/> for (int i = 0; i
+                    < 5; i++) <br/> {
+                    <br/> &emsp;output++;
+                    <br/> }
+                </p>
             </div>
-             <form >
-				<br><input type="radio" name="choice" id="9" value="0"> 0
-				<br><input type="radio" name="choice" id="10" value="4"> 4
-				<br><input type="radio" name="choice" id="11" value="1"> 5
-				<br><input type="radio" name="choice" id="12" value="0"> 8
-				<br><input type="radio" name="choice" id="13" value="0"> I'm not sure
-				<br>
-			</form>
+            <form>
+                <br>
+                <input type="radio" name="choice" id="9" value="0"> 0
+                <br>
+                <input type="radio" name="choice" id="10" value="4"> 4
+                <br>
+                <input type="radio" name="choice" id="11" value="1"> 5
+                <br>
+                <input type="radio" name="choice" id="12" value="0"> 8
+                <br>
+                <input type="radio" name="choice" id="13" value="0"> I'm not sure
+                <br>
+                <br>
+            </form>
         </div>
     </div>
 </div>
@@ -120,42 +130,46 @@
     <div class="col-12">
         <div class="link-box mr-3 ml-3">
             <h3>Question 4:</h3>
-            <h4>The binary system uses powers of ___</h4>
-            <form>
-                <input type="radio" name="choice" id="14" value="0"> Four 
-                <br>
-                <input type="radio" name="choice" id="15" value="0"> Ten 
-                <br>
-                <input type="radio" name="choice" id="16" value="0"> Negative Two 
-                <br>
-                <input type="radio" name = "choice" id="17" value="4"> Two
-                <br>
-                <br>
-            </form>
+            <h4>The binary system uses powers of ___</h4>
+            <form>
+            
+                <input type="radio" name="choice" id="14" value="0"> Four
+                <br>
+                <input type="radio" name="choice" id="15" value="0"> Ten
+                <br>
+                <input type="radio" name="choice" id="16" value="0"> Negative Two
+                <br>
+                <input type="radio" name="choice" id="17" value="4"> Two
+                <br>
+                <br>
+            </form>
         </div>
     </div>
 </div>
-
 <!-- Row 9 -->
 <div class="row mt-5">
     <div class="col-12">
         <div class="link-box mr-3 ml-3">
             <h3>Question 5:</h3>
-            <h4>What puzzle would you prefer to complete?</h4>
-            <form>
-                <input type="radio" name="choice" id="18" value="1"> Crossword 
-                <br>
-                <input type="radio" name="choice" id="19" value="4"> Sudoku 
-                <br>
-                <input type="radio" name="choice" id="20" value="1"> Jigsaw
-                <br>
-                <input type="radio" name = "choice" id="21" value="0"> I don't like puzzles
-                <br>
-                <br>
-            </form>
+            <h4>What puzzle would you prefer to complete?</h4>
+            <form>
+            
+                <input type="radio" name="choice" id="18" value="1"> Crossword
+                <br>
+                <input type="radio" name="choice" id="19" value="4"> Sudoku
+                <br>
+                <input type="radio" name="choice" id="20" value="1"> Jigsaw
+                <br>
+                <input type="radio" name="choice" id="21" value="0"> I don't like puzzles
+                <br>
+                <br>
+            </form>
         </div>
     </div>
 </div>
+<br>
+<button type="button" onclick="counter()" class="btn btn-danger mb-3">Submit</button>
+<p><br></p>
+</center>
 
-<button onclick="counter()">Submit</button>
 </html>
