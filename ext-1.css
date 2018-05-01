@@ -49,6 +49,7 @@ h4 {
     text-align: center;
 }
 
+<<<<<<< HEAD
 .input{
 	text-align: center;
 }
@@ -88,4 +89,8 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+=======
+.input {
+    text-align: center;
+>>>>>>> 89aaecae6d5da7790d8167d80afacf17f4e061bf
 }
