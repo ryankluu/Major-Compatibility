@@ -18,18 +18,20 @@
     async defer></script>
    	<script>
     var map;
+    var me_marker = "me_marker.png"
     function initMap(latitude,longitude) {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: parseFloat(latitude), lng: parseFloat(longitude)},
-          zoom: 17
+          zoom: 18
         });
-        var poi_icon = "poi_icon.png" //this can be changed later to something better and we can add longer descriptions to the markers (or add quiz pages to them)
+        var poi_icon = "poi_icon.png" 
         var building_info = new google.maps.InfoWindow({content: "none"});
-        add_poi("Anderson: engineering building",42.406104,-71.116791,poi_icon,building_info);
-        add_poi("Olin: language building",42.408286,-71.121167,poi_icon,building_info)
-        add_poi("Halligan: computer science building",42.408215,-71.11624,poi_icon,building_info)
-        add_poi("pearson",42.407484,-71.119023,poi_icon,building_info);
-        add_poi("braker",42.407484,-71.119023,poi_icon,building_info)        
+        add_poi("<h2>You are here!</h2>",parseFloat(latitude),parseFloat(longitude),me_marker,building_info)
+        add_poi("<h1>Anderson: engineering building</h1><a href=ext_4.html><button>Click here to learn if you should be an engineer!</button>",42.406104,-71.116791,poi_icon,building_info);
+        add_poi("<h1>Olin: language building</h1><a href=ext_1.html><button>Click here to learn if you should major in a foreign language!</button>",42.408286,-71.121167,poi_icon,building_info)
+        add_poi("<h1>Halligan: computer science building</h1><a href=ext_2.html><button>Click here to learn if you should be a computer science major!</button>",42.408215,-71.11624,poi_icon,building_info)
+        //add_poi("pearson",42.407484,-71.119023,poi_icon,building_info);
+        add_poi("<h1>braker</h1><a href=ext_3.html><button>Click here to learn if you should be an econ major!</button>",42.407484,-71.119023,poi_icon,building_info)        
     }
    	function success(position) {
         var lat  = position.coords.latitude;
