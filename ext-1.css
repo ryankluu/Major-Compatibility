@@ -42,6 +42,7 @@ h3 {
 .link-box {
     border-style: double;
     background-color: white;
+    opacity: 0.8;
 }
 
 
@@ -67,7 +68,7 @@ body, html {
     background-image: url('Olin.webp');
 
     /* Full height */
-    height: 80%; 
+    height: 50%; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -81,7 +82,7 @@ body, html {
     background-image: url('halligan.png');
 
     /* Full height */
-    height: 80%; 
+    height: 50%; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -95,7 +96,7 @@ body, html {
     background-image: url('braker.jpg');
 
     /* Full height */
-    height: 80%; 
+    height: 50%; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -109,7 +110,7 @@ body, html {
     background-image: url('SEC.jpg');
 
     /* Full height */
-    height: 80%; 
+    height: 50%; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
