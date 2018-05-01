@@ -14,6 +14,20 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
+<script>
+        var sum = 0;
+
+        function counter() {
+            for (i = 0; i < 15; i++) {
+                if (document.getElementById(i).checked) {
+                    sum += +document.getElementById(i).value;
+                }
+            }
+            alert(sum);
+            sum = 0;
+        }
+</script>
+
 <div class = "container=fluid">
 </div>
 
@@ -140,4 +154,6 @@
         </div>
     </div>
 </div>
+
+<button onclick="counter()">Submit</button>
 </html>
