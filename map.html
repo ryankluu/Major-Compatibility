@@ -26,7 +26,7 @@
     function initMap(latitude,longitude) {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: parseFloat(latitude), lng: parseFloat(longitude)},
-          zoom: 14
+          zoom: 16
         });
         var poi_icon = "poi-icon2.png"
         var building_info = new google.maps.InfoWindow({content: "none"});
