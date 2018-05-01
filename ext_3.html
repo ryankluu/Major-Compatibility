@@ -16,9 +16,10 @@ var sum = 0;
 
         
 function counter() {            
-    for (i = 0; i < 15; i++) {                 if (document.getElementById(i).checked) {                     sum += +document.getElementById(i).value;                 }             }             alert(sum);
+    for (i = 0; i < 15; i++) {                 if (document.getElementById(i).checked) {                     sum += +document.getElementById(i).value;                 }             }           
     localStorage.setItem("quiz_3", sum);            
-    sum = 0;        
+    sum = 0;
+    window.location = "quiz.html";        
 }
 </script>
 <div class="container=fluid">
