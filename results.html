@@ -33,9 +33,15 @@
 </head>
 
 <body onload="results()">
-    <div id="score"> </div>
+<video autoplay muted loop id="myVideo">
+<source src="Tufts.mp4" type="video/mp4">
+</video>
+<div id="score"> </div>
 </body>
+
 <script>
+var video = document.getElementById("myVideo");
+
 function results() {
     // get first score and add to innerHTML
     score = -999;
@@ -112,3 +118,5 @@ function results() {
     htmlscore.innerHTML += "<h5>" + "3) " + topScore + ": " + score3 * 250 + "</h5>";
 }
 </script>
+</body>
+</html>

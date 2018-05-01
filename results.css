@@ -64,3 +64,15 @@ h5{
     display: inline-block;
     float:none;
 }
+
+#myVideo {
+    position: fixed;
+}
+
+#score {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
