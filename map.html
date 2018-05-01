@@ -19,13 +19,13 @@
     async defer></script>
    	<script>
     var map;
-    var me_marker = "me_marker.png"
+    var me_marker = "my_location_icon.png"
     function initMap(latitude,longitude) {
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: parseFloat(latitude), lng: parseFloat(longitude)},
           zoom: 18
         });
-        var poi_icon = "poi_icon.png"
+        var poi_icon = "poi-icon2.png"
         var building_info = new google.maps.InfoWindow({content: "none"});
         add_poi("<h2>You are here!</h2>",parseFloat(latitude),parseFloat(longitude),me_marker,building_info)
         add_poi("<h1>Anderson: Engineering</h1><a href=ext_4.html><button>Click here to learn if you should be an engineer!</button>",42.406104,-71.116791,poi_icon,building_info);
