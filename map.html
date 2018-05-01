@@ -31,11 +31,10 @@
         var poi_icon = "poi-icon2_50.png"
         var building_info = new google.maps.InfoWindow({content: "none"});
         add_poi("<h2>You are here!</h2>",parseFloat(latitude),parseFloat(longitude),me_marker,building_info)
-        add_poi("<h1>Quiz 4: Engineering</h1><a href=ext_4.html><button>Start Quiz Here!</button>",42.406104,-71.116791,poi_icon,building_info);
-        add_poi("<h1>Quiz 1: Foreign Language and Culture Studies</h1><a href=ext_1.html><button>Start Quiz Here!</button>",42.408286,-71.121167,poi_icon,building_info)
-        add_poi("<h1>Quiz 2: Computer Science</h1><a href=ext_2.html><button>Start Quiz Here!</button>",42.408215,-71.11624,poi_icon,building_info)
-        //add_poi("pearson",42.407484,-71.119023,poi_icon,building_info);
-        add_poi("<h1>Quiz 3: History and Economics</h1><a href=ext_3.html><button>Start Quiz Here!</button>",42.407484,-71.119023,poi_icon,building_info)        
+        add_poi("<h2>Quiz 4: Engineering</h2><a href=ext_4.html target=_blank><button><h3>Start Quiz Here!</h3></button>",42.406104,-71.116791,poi_icon,building_info);
+        add_poi("<h2>Quiz 1: Foreign Language and Culture Studies</h1><a href=ext_1.html target=_blank><button><h3>Start Quiz Here!</h3></button>",42.408286,-71.121167,poi_icon,building_info)
+        add_poi("<h2>Quiz 2: Computer Science</h2><a href=ext_2.html target=_blank><button><h3>Start Quiz Here!</h3></button>",42.408215,-71.11624,poi_icon,building_info)
+        add_poi("<h2>Quiz 3: History and Economics</h2><a href=ext_3.html target=_blank ><button><h3>Start Quiz Here!</h3></button>",42.407484,-71.119023,poi_icon,building_info)        
     }
    	function success(position) {
         var lat  = position.coords.latitude;

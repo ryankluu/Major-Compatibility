@@ -1,5 +1,5 @@
 #map {
-  height: 100%;
+    height:100%;
 }
 html, body {
   height: 100%;
@@ -12,5 +12,17 @@ p {
 }
 
 button {
-	font-size: 32px
+  padding: 15px 25px;
+  font-size: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+button:hover {background-color: pink;}
+
+button:active {
+  background-color: pink;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
