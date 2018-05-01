@@ -45,26 +45,19 @@
 </div>
 </div>
 
-
 <script>
-	function store_value() {
-		var answers = document.getElementsByName("answer");
-		var checked = false;
-		total = 0;
+        var sum = 0;
 
-		for(i = 0; i < answers.length; i++ ) {
-			if(answers[i].checked) {
-				checked = true;
-				total += +answers[i].value;
-			}
-		} 
-	  	if(!checked) {
-	  		alert("Please answer all questions and submit again!");
-	  		return;
-	  	}
-	  	alert(total);
-	  //	window.location.replace("http://stackoverflow.com");
- 	 }
+        function counter() {
+            for (i = 0; i < 12; i++) {
+                if (document.getElementById(i).checked) {
+                    sum += +document.getElementById(i).value;
+                }
+            }
+            alert(sum);
+            localStorage.setItem("quiz_1", sum);
+            sum = 0;
+        }
 </script>
 
 <body>
@@ -77,10 +70,10 @@
             <h3>Question 1:</h3>
             <h4>Favorite way to spend your free time?</h4>
             <form >
-			<input type="radio" name="answer" value="4">Programming 
-			<br><input type="radio" name="answer" value="2"> Day dreaming 
-			<br><input type="radio" name="answer" value="1"> Reading
-			<br><input type="radio" name="answer" value="1"> Napping
+			<input type="radio" name="answer"  id = "0" value="4"> Programming 
+			<br><input type="radio" name="answer" id = "1" value="2"> Day dreaming 
+			<br><input type="radio" name="answer" id = "2" value="1"> Reading
+			<br><input type="radio" name="answer" id = "3" value="1"> Napping
 			<br>
 			<br>
 			</form>
@@ -90,9 +83,9 @@
         	<h3>Question 2: </h3>
         	<h4>I'm good at helping people...</h4>
             <form >
-			<input type="radio" name="answer" value="4">Understand and learn complex ideas
-			<br><input type="radio" name="answer" value="3"> Understand others and resolve disagreements
-			<br><input type="radio" name="answer" value="1"> Understand major themes in novels and films
+			<input type="radio" name="answer" id = "4" value="4"> Understand and learn complex ideas
+			<br><input type="radio" name="answer" id = "5" value="3"> Understand others and resolve disagreements
+			<br><input type="radio" name="answer" id = "6" value="1"> Understand major themes in novels and films
 			<br>
 			<br>
 			</form>
@@ -102,10 +95,10 @@
         	<h3>Question 3: </h3>
         	<h4>What would you rather do?</h4>
             <form >
-			<input type="radio" name="answer" value="5">Help invent new, cutting-edge technology
-			<br><input type="radio" name="answer" value="1">Become a best selling author 
-			<br><input type="radio" name="answer" value="2"> Teach students and kids
-			<br><input type="radio" name="answer" value="0"> Relaxing with my friends
+			<input type="radio" name="answer" id = "7" value="5">Help invent new, cutting-edge technology
+			<br><input type="radio" name="answer" id = "8" value="1"> Become a best selling author 
+			<br><input type="radio" name="answer" id = "9" value="2"> Teach students and kids
+			<br><input type="radio" name="answer" id = "10" value="0"> Relaxing with my friends
 			<br>
 			<br>
 			</form>
@@ -116,14 +109,14 @@
         	<h3> Question 4: </h3>
         	<h4>I prefer to work</h4>
             <form >
-			<input type="radio" name="answer" value="3">with a group of intelligent, curious people
-			<br><input type="radio" name="answer" value="1">alone, because I don't need others to tell me what to do
+			<input type="radio" name="answer" id = "11" value="3"> With a group of intelligent, curious people
+			<br><input type="radio" name="answer" id = "12" value="1"> Alone, because I don't need others to tell me what to do
 			<br>
 			<br>
 			</form>
 		</div>
-
-		<br> <button onclick="store_value()">Submit!</button>
+		<br>
+		<button type="button" onclick = "counter()" class="btn btn-danger mb-3">Submit</button>
 		<br> <p>  </p>
 		</center>
             </form>
