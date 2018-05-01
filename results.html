@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.
 	com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha38
 	4-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/d
 	AiS6JXm" crossorigin="anonymous">
@@ -20,108 +19,100 @@
         <h1 id="masthead" class="mt-3">
 			TPSA
 		</h1>
-       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-				  <a class="navbar-brand" href="#">Navigation</a>
-				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-				  </button>
-				  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				    <div class="navbar-nav">
-				      <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-				      <a class="nav-item nav-link" href="map.html">Interactive Map</a>
-				      <a class="nav-item nav-link disabled" href="quiz.html">Quiz Homepage</a>
-				    </div>
-				  </div>
-			</nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- <a class="navbar-brand" href="#">Navigation</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link " href="map.html">Interactive Map</a>
+                    <a class="nav-item nav-link " href="quiz.html">Quiz Homepage</a>
+                </div>
+            </div>
+        </nav>
     </div>
 </div>
 </head>
 
 <body onload="results()">
-	<div id="score"> </div>
+    <div id="score"> </div>
 </body>
-
 <script>
-	function results()
-	{
-		// get first score and add to innerHTML
-		score = -999;
-		quiz = "";
-		topScore = "";
-		for(var i = 1; i <= 4; i++)
-		{
-			var quiz_name = "quiz_" + i
+function results() {
+    // get first score and add to innerHTML
+    score = -999;
+    quiz = "";
+    topScore = "";
+    for (var i = 1; i <= 4; i++) {
+        var quiz_name = "quiz_" + i
 
-			if (localStorage.getItem(quiz_name) > +score)
-			{
-				score = localStorage.getItem(quiz_name);
-				quiz = quiz_name;
-			}
+        if (localStorage.getItem(quiz_name) > +score) {
+            score = localStorage.getItem(quiz_name);
+            quiz = quiz_name;
+        }
 
-		}
-		htmlscore = document.getElementById('score');
-		if (quiz == "quiz_1")
-			topScore = "Language/Culture";
-		else if (quiz == "quiz_2")
-			topScore = "Computer Science";
-		else if (quiz == "quiz_3")
-			topScore = "Economics";
-		else if (quiz = "quiz_4")
-			topScore = "Engineering";
+    }
+    htmlscore = document.getElementById('score');
+    if (quiz == "quiz_1")
+        topScore = "Language/Culture";
+    else if (quiz == "quiz_2")
+        topScore = "Computer Science";
+    else if (quiz == "quiz_3")
+        topScore = "Economics";
+    else if (quiz = "quiz_4")
+        topScore = "Engineering";
 
-		htmlscore.innerHTML = "<h2>" + "Your major choice should be: " + topScore + "</h2> <br>";
-		htmlscore.innerHTML += "<h3>" + "Your top three scores:" + "</h3>";
-		htmlscore.innerHTML += "<h5>" + "1) " + topScore + ": " + score *250 + "</h5>";
+    htmlscore.innerHTML = "<h2>" + "Your major choice should be: " + topScore + "</h2> <br>";
+    htmlscore.innerHTML += "<h3>" + "Your top three scores:" + "</h3>";
+    htmlscore.innerHTML += "<h5>" + "1) " + topScore + ": " + score * 250 + "</h5>";
 
 
-		// get second score, add to inner HTMl
-		score2 = -999;
-		quiz2 = "";
-		for(var i = 1; i <= 4; i++)
-		{
-			var quiz_name = "quiz_" + i
+    // get second score, add to inner HTMl
+    score2 = -999;
+    quiz2 = "";
+    for (var i = 1; i <= 4; i++) {
+        var quiz_name = "quiz_" + i
 
-			if (localStorage.getItem(quiz_name) > +score2 && quiz_name != quiz)
-			{
-				score2 = localStorage.getItem(quiz_name);
-				quiz2 = quiz_name;
-			}
+        if (localStorage.getItem(quiz_name) > +score2 && quiz_name != quiz) {
+            score2 = localStorage.getItem(quiz_name);
+            quiz2 = quiz_name;
+        }
 
-		}
-		if (quiz2 == "quiz_1")
-			topScore = "Language/Culture";
-		else if (quiz2 == "quiz_2")
-			topScore = "Computer Science";
-		else if (quiz2 == "quiz_3")
-			topScore = "Economics";
-		else if (quiz2 = "quiz_4")
-			topScore = "Engineering";
+    }
+    if (quiz2 == "quiz_1")
+        topScore = "Language/Culture";
+    else if (quiz2 == "quiz_2")
+        topScore = "Computer Science";
+    else if (quiz2 == "quiz_3")
+        topScore = "Economics";
+    else if (quiz2 = "quiz_4")
+        topScore = "Engineering";
 
-		htmlscore.innerHTML += "<h5>" + "2) " + topScore + ": " + score2 *250 + "</h5>";
+    htmlscore.innerHTML += "<h5>" + "2) " + topScore + ": " + score2 * 250 + "</h5>";
 
-		// get third score, add to inner HTMl
-		score3 = -999;
-		quiz3 = "";
-		for(var i = 1; i <= 4; i++)
-		{
-			var quiz_name = "quiz_" + i
+    // get third score, add to inner HTMl
+    score3 = -999;
+    quiz3 = "";
+    for (var i = 1; i <= 4; i++) {
+        var quiz_name = "quiz_" + i
 
-			if (localStorage.getItem(quiz_name) > +score3 && quiz_name != quiz && quiz_name != quiz2)
-			{
-				score3 = localStorage.getItem(quiz_name);
-				quiz3 = quiz_name;
-			}
+        if (localStorage.getItem(quiz_name) > +score3 && quiz_name != quiz && quiz_name != quiz2) {
+            score3 = localStorage.getItem(quiz_name);
+            quiz3 = quiz_name;
+        }
 
-		}
-		if (quiz3 == "quiz_1")
-			topScore = "Language/Culture";
-		else if (quiz3 == "quiz_2")
-			topScore = "Computer Science";
-		else if (quiz3 == "quiz_3")
-			topScore = "Economics";
-		else if (quiz3 = "quiz_4")
-			topScore = "Engineering";
+    }
+    if (quiz3 == "quiz_1")
+        topScore = "Language/Culture";
+    else if (quiz3 == "quiz_2")
+        topScore = "Computer Science";
+    else if (quiz3 == "quiz_3")
+        topScore = "Economics";
+    else if (quiz3 = "quiz_4")
+        topScore = "Engineering";
 
-		htmlscore.innerHTML += "<h5>" + "3) " + topScore + ": " + score3 *250 + "</h5>";
-	}
+    htmlscore.innerHTML += "<h5>" + "3) " + topScore + ": " + score3 * 250 + "</h5>";
+}
 </script>
