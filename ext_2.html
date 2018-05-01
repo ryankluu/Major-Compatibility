@@ -18,13 +18,15 @@
         var sum = 0;
 
         function counter() {
-            for (i = 0; i < 15; i++) {
+            for (i = 0; i < 21; i++) {
                 if (document.getElementById(i).checked) {
                     sum += +document.getElementById(i).value;
                 }
             }
             alert(sum);
-            sum = 0;
+           
+			localStorage.setItem("quiz_2", sum);
+			sum = 0;
         }
 </script>
 
@@ -67,7 +69,7 @@
         	<h3> Question 1: </h3>
             <h4>Would you rather deal with small details or the big picture?</h4>
              <form >
-				<br><input type="radio" name="choice" id="0" value="0> I would much rather deal with the big picture.
+				<br><input type="radio" name="choice" id="0" value="0"> I would much rather deal with the big picture.
 				<br><input type="radio" name="choice" id="1" value="0"> I would somewhat rather deal with the big picture.
 				<br><input type="radio" name="choice" id="2" value="1"> I have no preference.
 				<br><input type="radio" name="choice" id="3" value="2"> I would somewhat rather deal with the small details.
@@ -87,7 +89,7 @@
 				<br><input type="radio" name="choice" id="5" value="0"> UNO
 				<br><input type="radio" name="choice" id="6" value="0"> Monopoly
 				<br><input type="radio" name="choice" id="7" value="4"> Chess
-				<br><input type="radio" name="choice" id="8"value="0"> Scrabble
+				<br><input type="radio" name="choice" id="8" value="0"> Scrabble
 				<br>
 			</form>
         </div>
