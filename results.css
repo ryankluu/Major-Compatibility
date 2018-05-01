@@ -72,6 +72,8 @@ source{
 
 #myVideo {
     position: fixed;
+    height:100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -79,6 +81,7 @@ source{
 
 #score {
     position: fixed;
+    background-position: center;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
