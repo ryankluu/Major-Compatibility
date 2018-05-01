@@ -52,3 +52,40 @@ h4 {
 .input{
 	text-align: center;
 }
+
+
+
+body, html {
+    height: 100%;
+}
+
+
+
+.parallax1 {
+    /* The image used */
+    background-image: url('Olin.webp');
+
+    /* Full height */
+    height: 80%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.parallax4 {
+    /* The image used */
+    background-image: url('SEC.jpg');
+
+    /* Full height */
+    height: 80%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
