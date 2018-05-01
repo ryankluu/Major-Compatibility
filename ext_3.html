@@ -13,7 +13,19 @@
 	<link rel="stylesheet" href="ext-1.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+<script>
+        var sum = 0;
 
+        function counter() {
+            for (i = 0; i < 15; i++) {
+                if (document.getElementById(i).checked) {
+                    sum += +document.getElementById(i).value;
+                }
+            }
+            alert(sum);
+            sum = 0;
+        }
+</script>
 <div class = "container=fluid">
 </div>
 
@@ -53,10 +65,10 @@
         	<h3> Question 1: </h3>
             <h4>What school supplies are most important to you?</h4>
              <form >
-				<br><input type="radio" name="choice" value="Art supplies"> Art Supplies
-				<br><input type="radio" name="choice" value="Notebook"> Notebook
-				<br><input type="radio" name="choice" value="Calculator"> Calculator
-				<br><input type="radio" name="choice" value="Lab Notebook"> Lab Notebook
+				<br><input type="radio" name="choice" id="0" value="0"> Art Supplies
+				<br><input type="radio" name="choice" id="1" value="2"> Notebook
+				<br><input type="radio" name="choice" id="2" value="1"> Calculator
+				<br><input type="radio" name="choice" id="3" value="0"> Lab Notebook
 			</form>
         </div>
     </div>
@@ -68,10 +80,10 @@
         	<h3> Question 2: </h3>
             <h4>What is GDP?</h4>
             <form >
-				<br><input type="radio" name="choice" value="The total value of goods produced and services provided in a country during one year."> The total value of goods produced and services provided in a country during one year.
-				<br><input type="radio" name="choice" value="The total value of goods produced and services provided by a country during one year"> The total value of goods produced and services provided by a country during one year
-				<br><input type="radio" name="choice" value="The total amount of money earned within a country."> The total amount of money earned within a country.
-				<br><input type="radio" name="choice" value="Not sure"> Not sure
+				<br><input type="radio" name="choice" id="4" value="4"> The total value of goods produced and services provided in a country during one year.
+				<br><input type="radio" name="choice" id="5" value="2"> The total value of goods produced and services provided by a country during one year
+				<br><input type="radio" name="choice" id="6" value="0"> The total amount of money earned within a country.
+				<br><input type="radio" name="choice" id="7" value="0"> Not sure
 				<br>
 			</form>
         </div>
@@ -84,10 +96,10 @@
         	<h3> Question 3: </h3>
             <h4>What is an oppoutunity cost?</h4>
              <form >
-				<br><input type="radio" name="choice" value="The measure of uncertainty that an investor is willing to take to realize a gain from an investment. "> The measure of uncertainty that an investor is willing to take to realize a gain from an investment. 
-				<br><input type="radio" name="choice" value="The loss of potential gain from other alternatives when one alternative is chosen."> The loss of potential gain from other alternatives when one alternative is chosen.
-				<br><input type="radio" name="choice" value="A benefit, profit, or value of something that must be given up to acquire or achieve something else."> A benefit, profit, or value of something that must be given up to acquire or achieve something else.
-				<br><input type="radio" name="choice" value="Not sure"> Not sure
+				<br><input type="radio" name="choice" id="8" value="0 "> The measure of uncertainty that an investor is willing to take to realize a gain from an investment. 
+				<br><input type="radio" name="choice" id="9" value="4"> The loss of potential gain from other alternatives when one alternative is chosen.
+				<br><input type="radio" name="choice" id="10" value="0"> A benefit, profit, or value of something that must be given up to acquire or achieve something else.
+				<br><input type="radio" name="choice" id="11" value="0"> Not sure
 				<br>
 			</form>
         </div>
@@ -100,18 +112,19 @@
             <h3>Question 4:</h3>
             <h4>Are you interested in the stock market?</h4>
             <form>
-                <input type="radio" name="choice" value="Yes, I own shares of companies on the stock market. "> Yes, I own shares of companies on the stock market. 
+                <input type="radio" name="choice" id="12" value="5"> Yes, I own shares of companies on the stock market. 
                 <br>
-                <input type="radio" name="choice" value="Yes, but I don't own any shares.  "> Yes, but I don't own any shares.  
+                <input type="radio" name="choice" id="13" value="3"> Yes, but I don't own any shares.  
                 <br>
-                <input type="radio" name="choice" value="No, but I do want to learn more about it."> No, but I do want to learn more about it.
+                <input type="radio" name="choice" id="14" value="1"> No, but I do want to learn more about it.
                 <br>
-                <input type="radio" name = "choice" value="No, not at all."> No, not at all.
+                <input type="radio" name = "choice" id="15" value="0"> No, not at all.
                 <br>
                 <br>
             </form>
         </div>
     </div>
 </div>
-
+<br>
+<button onclick="counter()">Submit</button>
 </html>
