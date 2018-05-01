@@ -49,7 +49,8 @@
       var building = new google.maps.Marker({
                           position: {lat: lat, lng: lng},
                           map: map,
-                          icon: icon
+                          icon: icon,
+                          size: new google.maps.Size(10, 15)
                           });
         building.info = info;
         google.maps.event.addListener(building,"click",function(){building_info.setContent(this.info);

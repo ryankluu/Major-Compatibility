@@ -19,7 +19,8 @@ function counter() {            
     for (i = 0; i < 21; i++) {                 if (document.getElementById(i).checked) {                     sum += +document.getElementById(i).value;                 }             }                        
     localStorage.setItem("quiz_2", sum);
     sum = 0;
-    window.location = 'quiz.html';        
+    window.close()
+   // window.location = 'quiz.html';        
 }
 </script>
 <div class="container=fluid">
