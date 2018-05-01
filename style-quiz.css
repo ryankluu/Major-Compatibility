@@ -43,7 +43,7 @@ h3{
 	border-style: double;
 	text-align: center;
 	background-color: white;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
 
@@ -69,7 +69,7 @@ body{
 
 .parallax1 {
     /* The image used */
-    background-image: url('Olin.webp');
+    background-image: url('home-img2.jpg');
 
     /* Full height */
     height: 80%; 
