@@ -56,8 +56,9 @@ h3{
 
 #footer{
 	background-color: #507fb9;
-	min-height: 300px;
+	min-height: 350px;
     height: 100%;
+    margin-top: 50px;
 }
 
 
