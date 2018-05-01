@@ -41,17 +41,31 @@
 <!-- Row 5 -->
 <div class="row mt-5">
     <div class="col-12">
+        <script>
+        var sum = 0;
+
+        function counter() {
+            for (i = 0; i < 22; i++) {
+                if (document.getElementById(i).checked) {
+                    sum += +document.getElementById(i).value;
+                }
+            }
+            alert(sum);
+            localStorage.setItem("quiz_1", sum);
+            sum = 0;
+        }
+        </script>
         <div class="link-box mr-3 ml-3">
             <h3>Question 1:</h3>
             <h4>How many langauges are you currently proficient in?</h4>
             <form>
-                <input type="radio" name="choice"> One
+                <input type="radio" name="choice" id="0" value="1"> One
                 <br>
-                <input type="radio" name="choice"> Two
+                <input type="radio" name="choice" id="1" value="2"> Two
                 <br>
-                <input type="radio" name="choice"> Three
+                <input type="radio" name="choice" id="2" value="4"> Three
                 <br>
-                <input type="radio" name="choice"> More than three
+                <input type="radio" name="choice" id="3" value="5"> More than three
                 <br>
                 <br>
             </form>
@@ -61,15 +75,15 @@
             <h3>Question 2:</h3>
             <h4>Choose your favorite rainy day activity</h4>
             <form>
-                <input type="radio" name="choice"> Reading
+                <input type="radio" name="choice" id="4" value="1"> Reading
                 <br>
-                <input type="radio" name="choice"> Playing Video Games
+                <input type="radio" name="choice" id="5" value="0"> Playing Video Games
                 <br>
-                <input type="radio" name="choice"> Drawing/Painting
+                <input type="radio" name="choice" id="6" value="3"> Drawing/Painting
                 <br>
-                <input type="radio" name="choice"> Watching a Romantic Movie
+                <input type="radio" name="choice" id="7" value="3"> Watching a Romantic Movie
                 <br>
-                <input type="radio" name="choice"> Eating
+                <input type="radio" name="choice" id="8" value="2"> Eating
                 <br>
                 <br>
             </form>
@@ -79,13 +93,13 @@
             <h3>Question 3:</h3>
             <h4>The phone rings but you don't recognize the number, what do you do?</h4>
             <form>
-                <input type="radio" name="choice"> Let it go to voicemail
+                <input type="radio" name="choice" id="8" value="1"> Let it go to voicemail
                 <br>
-                <input type="radio" name="choice"> Pick it up reluctantly
+                <input type="radio" name="choice" id="9" value="2"> Pick it up reluctantly
                 <br>
-                <input type="radio" name="choice"> Silence your phone
+                <input type="radio" name="choice" id="10" value="0"> Silence your phone
                 <br>
-                <input type="radio" name="choice"> Answer as soon as it rings
+                <input type="radio" name="choice" id="11" value="4"> Answer as soon as it rings
                 <br>
                 <br>
             </form>
@@ -95,29 +109,13 @@
             <h3>Question 4:</h3>
             <h4>How do you feel about working in groups?</h4>
             <form>
-                <input type="radio" name="choice"> Love it
+                <input type="radio" name="choice" id="12" value="4"> Love it
                 <br>
-                <input type="radio" name="choice"> Indifferent
+                <input type="radio" name="choice" id="13" value="2"> Indifferent
                 <br>
-                <input type="radio" name="choice"> Dread it
+                <input type="radio" name="choice" id="14" value="1"> Dread it
                 <br>
-                <input type="radio" name="choice"> Enjoy it but also like working alone
-                <br>
-                <br>
-            </form>
-        </div>
-        <br>
-        <div class="link-box mr-3 ml-3">
-            <h3>Question 4:</h3>
-            <h4>Identify the language used in the following sentence: <br>"Hvala što ste uzeli naš kviz!"</h4>
-            <form>
-                <input type="radio" name="choice"> Swedish
-                <br>
-                <input type="radio" name="choice"> Czech
-                <br>
-                <input type="radio" name="choice"> Bulgarian
-                <br>
-                <input type="radio" name="choice"> Bosnian
+                <input type="radio" name="choice" id="15" value="2"> Enjoy it but also like working alone
                 <br>
                 <br>
             </form>
@@ -125,19 +123,36 @@
         <br>
         <div class="link-box mr-3 ml-3">
             <h3>Question 5:</h3>
+            <h4>Identify the language used in the following sentence: <br>"Hvala što ste uzeli naš kviz!"</h4>
+            <form>
+                <input type="radio" name="choice" id="16" value="0"> Swedish
+                <br>
+                <input type="radio" name="choice" id="17" value="0"> Czech
+                <br>
+                <input type="radio" name="choice" id="18" value="0"> Bulgarian
+                <br>
+                <input type="radio" name="choice" id="19" value="3"> Bosnian
+                <br>
+                <br>
+            </form>
+        </div>
+        <br>
+        <div class="link-box mr-3 ml-3">
+            <h3>Question 6:</h3>
             <h4>What kind of noun is the word "team"?</h4>
             <form>
-                <input type="radio" name="choice"> Collective
+                <input type="radio" name="choice" id="20" value="3"> Collective
                 <br>
-                <input type="radio" name="choice"> Abstract
+                <input type="radio" name="choice" id="21" value="0"> Abstract
                 <br>
-                <input type="radio" name="choice"> Abstract and Collective
+                <input type="radio" name="choice" id="22" value="0"> Abstract and Collective
                 <br>
                 <br>
             </form>
         </div>
         <br>
     </div>
+    <button onclick="counter()">Submit</button>
 </div>
 </div>
 
